@@ -1,6 +1,13 @@
-## Document Server and ownCloud Docker installation
+# my changes ([https://github.com/giabar](giabar))
 
-Document Server and ownCloud Docker installation will install the preconfigured version of [ONLYOFFICE Document Server][2] connected to ownCloud to your server running them in Docker containers.
+1. ONLYOFFICE app 2.1.10 version
+2. Nextcloud 16.0.1 version
+3. Nginx 1.7 version
+
+
+## Document Server and Nextcloud Docker installation
+
+Document Server and Nextcloud Docker installation will install the preconfigured version of [ONLYOFFICE Document Server][2] connected to Nextcloud to your server running them in Docker containers.
 
 
 ## Requirements
@@ -11,23 +18,22 @@ Document Server and ownCloud Docker installation will install the preconfigured 
 
 ## Installation
 
-1. Get the latest version of this repository running the command:
+1. Clone this repository running the command:
 
     ```
-    git clone --recursive https://github.com/ONLYOFFICE/docker-onlyoffice-owncloud
-    cd docker-onlyoffice-owncloud
-    git submodule update --remote
+    git clone https://github.com/giabar/gb-onlyoffice-nextcloud
     ```
 
 2. Run Docker Compose:
 
     ```
+    cd gb-onlyoffice-nextcloud
     docker-compose up -d
     ```
 
     *Please note**: you might need to wait a couple of minutes when all the containers are up and running after the above command.
 
-3. Now launch the browser and enter the webserver address. The ownCloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
+3. Now launch the browser and enter the webserver address. The Nextcloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
 
 4. Go to the project folder and run the `set_configuration.sh` script:
 
@@ -35,12 +41,12 @@ Document Server and ownCloud Docker installation will install the preconfigured 
     bash set_configuration.sh
     ```
 
-Now you can enter ownCloud and create a new document. It will be opened in ONLYOFFICE Document Server.
+Now you can enter Nextcloud and create a new document. It will be opened in ONLYOFFICE Document Server.
 
 
 ## ONLYOFFICE Document Server editions
 
-Here we offer you to deploy ownCloud with preconfigured free version of ONLYOFFICE Document Server. Note that there’re commercial versions of it. 
+Here we offer you to deploy Nextcloud with preconfigured free version of ONLYOFFICE Document Server. Note that there’re commercial versions of it. 
 
 **ONLYOFFICE Document Server:**
 
